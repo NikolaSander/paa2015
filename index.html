@@ -1,0 +1,324 @@
+﻿<!doctype html>
+<!-- to print to pdf, open in Chrome and add ?print-pdf to url -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>PAA 2015</title>
+		<meta name="description" content="How Data Visualisation Enhances the Impact and Visibility of Science">
+		<meta name="author" content="Nikola Sander and Ramon Bauer">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		
+		<!-- Selected Style: Nikola -->
+		<link rel="stylesheet" href="css/theme/nikola.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes '?print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );}
+		</script>
+		<!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]-->
+
+	  <!-- D3 -->
+		<link href="d3/dist/app-v1.css" rel="stylesheet" media="all">
+		<!--[if lt IE 9]><script src=javascripts/html5shiv-printshiv.js></script><![endif]-->
+		<script src="d3/dist/app-v1.js"></script>
+	  	  
+	 <!-- Twitter colour theme -->
+		<meta name="twitter:widgets:link-color" content="#FF7F00">
+		<meta name="twitter:widgets:theme" content="dark">
+
+	<!--orange color: #ff9a15 -->
+		
+		
+	</head>
+	<body>
+	<div class="reveal">
+		<div class="slides">
+		<!-- SLIDES -->		
+		
+			<section data-background="images/US-net-2013.png" data-background-size="contain">
+				<div style="background-color: rgba(0, 0, 0, 0.3)">
+				<h4 style="text-align: center; font-size: 125%; font-weight: bold"> How Data Visualisation Enhances<br> the Impact and Visibility of Science</h4>
+				<h5 style="text-align: center;font-size: 100%">Nikola Sander and Ramon Bauer</h5>
+				<h5 style="text-align: center;font-size: 100%">PAA, San Diego, April 2015</h5>		
+				</div>
+			</section>
+
+			<section data-background="images/text-tabelle.jpg" data-background-size="contain">		
+				<h2>State of science communication</h2>
+				<blockquote>
+				“Scientists must learn to communicate with the public, be willing to do so and indeed consider it their duty to do so.”
+				</blockquote>
+				<p style="text-align:right; font-size: 80%">Royal Society, 1985</p>
+			</section>	
+			
+			<section>		
+				<h2>Why visualise data?</h2>
+				<p>Anscombe's quartet:<br> 4 datasets with almost identical statistical properties.</p>
+				<img src="images/Anscombes_quartet.png"  width="70%">
+			</section>	
+			
+			<section>		
+				<h2>5 Steps in data visualisation</h2>
+				<blockquote style="width: 90%">
+				<ol>
+				<li>Identify the purpose of the data visualization</li> 
+				<li>Identify the questions you aim to answer</li> 
+				<li>Acquire, explore and prepare the data</li> 
+				<li>Conceive the visualization</li> 
+				<li>Construct and publish</li> 
+				</ol>
+				</blockquote>
+				<p style="text-align:right; font-size: 80%">Andi Kirk, visualisingdata.com</p>
+			</section>	
+			
+			<section>		
+				<h2>Graphical excellence...</h2>
+				<blockquote style="width: 100%">
+				<ol>
+				<li>...is a matter of substance, of statistics, and of design</li> 
+				<li>...consists of complex ideas communicated with clarity, precision and efficiency</li> 
+				<li>...gives the viewer the greatest insight in the shortest time with the least ink</li> 
+				</ol>
+				</blockquote>
+				<p style="text-align:right; font-size: 80%"> Edward Tufte, 2001</p>
+			</section>	
+
+			<section data-background="images/stefaner.png" data-background-size="contain">	
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<h3 style="text-align:right; color:#333;background-color:rgba(255, 255, 255, 0.2)">Remixing Rosling, by Moritz Stefaner </h3>
+				<p style="text-align:right; color:#333">Can you spot the reindeer?</p>
+			</section>	
+			
+			<section data-background="images/earth-wind.png" data-background-size="contain">	
+				<h3 style="text-align:center; color:#F4EBCE;background-color:rgba(0, 0, 0, 0.5)">earth:: global wind map, by Cameron Beccario</h3>
+			</section>
+			
+			<section data-background="images/100excel.png" data-background-size="contain">	
+			</section>	
+
+			<section data-background="images/resources_andy.png" data-background-size="contain">	
+				<h3 style="text-align:center; color:#000;background-color:rgba(204, 255, 102, 0.8)">Rapid development of open-source tools!</h3>
+			</section>	
+
+			<section data-background="images/Kirk-hats.png" data-background-size="contain">	
+				<h3 style="text-align:center; color:#000;background-color:rgba(255, 255, 255, 0.8)">Data visualisation requires a range of skills. <br> -> Teamwork!</h3>
+			</section>
+			
+			<section data-background="images/circular-world.png" data-background-size="contain">	
+				<h2 style="text-align:center; color:#F4EBCE;background-color:rgba(0, 0, 0, 0.5)"><a href="http://www.global-migration.info" target="_blank">"The Global Flow of People"</a></h2>
+				<p style="text-align:center; color:#F4EBCE;background-color:rgba(0, 0, 0, 0.5)">Coding: Null2 Berlin</p>
+				<p style="text-align:center; color:#F4EBCE;background-color:rgba(0, 0, 0, 0.5)">Data: Guy J Abel</p>
+				<p style="text-align:center; color:#F4EBCE;background-color:rgba(0, 0, 0, 0.5)">Web design: Elvira Stein</p>
+				<p style="text-align:center; color:#F4EBCE;background-color:rgba(0, 0, 0, 0.5)">Financial support: Vienna Institute of Demography</p>
+			</section>	
+			
+			<section data-background="images/Table_big1.png" data-background-size="contain">	
+				<h3 style="text-align:center; color:#F4EBCE;background-color:rgba(0, 0, 0, 0.5)">Global international migration flows<br> 196*196*4</h3>
+			</section>	
+
+			<section data-background="images/flowmap-adam.jpg" data-background-size="contain">	
+				<br><br><br><br><br><br><br><br><br><br>
+				<h3 style="text-align:center; color:#000;background-color:rgba(255, 255,255, 0.5)">Traditional migration flow map.</h3>
+			</section>	
+			
+			<section data-background="images/circos.png" data-background-size="contain">	
+				<h3 style="text-align:center; color:#000;background-color:rgba(255, 255,255, 0.7)">A source of inspiration.</h3>
+			</section>	
+			
+			<section data-background="images/Science_Fig4.jpg" data-background-size="contain">	
+				<h3 style="text-align:center; color:#000;background-color:rgba(255, 255,255, 0.5)">Circular <br> Migration Plot</h3>
+			</section>	
+			
+			<section>
+				<h2><a href="http://www.sciencemag.org/content/343/6178/1520" target="_blank"> Quantifying Global International Migration Flows.</a></h2>
+				<p>Guy Abel & Nikola Sander.<br>Published in <i>Science</i> on 28March 2014; Vol 343: 1520-1522.</p> 
+				<br>
+				<img src="images/science.png"  width="300">
+			</section>			
+			
+			<section>
+				<h3>Global migration flows stable at 0.6% of world population</h3>
+				<img src="images/global-intensity.png"  width="700">
+			</section>
+	
+			<section data-background="images/demogr-datasheet1.png" data-background-size="contain">	
+			</section>
+			
+			<section data-background="images/datasheets_both.png" data-background-size="contain">	
+			</section>		
+			
+			<section data-background="images/global-migration.png" data-background-size="contain">
+			</section>			
+			
+			<!-- Interactive 	-->
+			<section style="width:800px">			
+			<div>
+					<nav role=navigation>
+					<div id="timeline"></div>
+					</nav>
+
+					<div id="diagram"></div>
+				</div>
+				  <script>
+					(function() {
+					  var help = d3.select('#help');
+					  help.on('click', function() {
+						var isActive = help.classed('active');
+						help
+						  .classed('active', !isActive)
+						  .transition()
+						  .style('width', isActive ? '30px' : '572px');
+					  });
+					  function helpOffset() {
+						var offset = Math.max((document.body.clientWidth - document.getElementById('container').clientWidth) / 2, 0);
+						help.style('right', offset + 'px');
+					  }
+					  d3.select(window).on('resize.help-resize', helpOffset);
+					  helpOffset();
+					})();
+				  </script>
+				  <script>
+					(function() {
+					  var datafile = 'd3/json/migrations.json';
+					  var aLittleBit = Math.PI / 100000;
+					  d3.json(datafile, function(data) {
+						var now = 2005;
+						var chart = Globalmigration.chart(data, {
+						  element: '#diagram',
+						  now: now,
+						  animationDuration: 1400,
+						  margin: 125,
+						  arcPadding: 0.04,
+						  layout: {
+							threshold: 50000,
+							labelThreshold: 5000,
+							colors: 'cd3d08 ec8f00 6dae29 683f92 b60275 2058a5 00a592 009d3c 378974 ffca00'.split(' ').map(function(c) { return '#' + c; })
+						  }
+						});
+						Globalmigration.timeline(chart, {
+						  now: now,
+						  element: '#timeline'
+						});
+						chart.draw(now);
+					  });
+					})();
+				  </script>
+				  <script>
+					(function() {
+					  function loadScript(d,s,l,id){
+						var js,
+						fjs=d.getElementsByTagName(s)[0],
+						p=/^http:/.test(d.location)?'http':'https';
+						if(!id || !d.getElementById(id)){
+						  js=d.createElement(s);
+						  js.id=id;
+						  js.src=p+'://' + l;
+						  fjs.parentNode.insertBefore(js,fjs);
+						}
+					  }
+					})();
+				  </script>
+			</section>			
+
+			<section data-background="images/impact.jpg" data-background-size="contain">	
+				<h1 style="text-align:left; width: 76%; color:#000;background-color:rgba(255, 255,255, 0.7)">Scientific Impact</h1>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</section>	
+
+			<section>		
+				<h2>Impact in:</h2>
+				<ol style="font-size:45px">
+				<li>Science </li> 
+				<li>Policy</li> 
+				<li>Public</li> 
+				<li>Education</li> 
+				</ol>
+			</section>	
+	
+			<section data-background="images/citations.png" data-background-size="contain">	
+			</section>	
+
+			<section data-background="images/altmetrics.png" data-background-size="contain">	
+			</section>	
+			
+			<section data-background="images/ilo.png" data-background-size="contain">	
+			</section>	
+			
+			<section data-background="images/best-american.jpg" data-background-size="contain">	
+			</section>
+			
+			<section data-background="images/schulbuch.jpg" data-background-size="contain">	
+			</section>
+						
+			<section>
+				<h2>Social Media: Feedback via Twitter</h2>
+				<blockquote style="width: 80%; font-size:40px; line-height: 1.5">"Fantastic visualization of global migration data. I'm on there if you zoom in a lot."</blockquote>
+				<br>
+				<blockquote style="width: 80%; font-size:40px ;line-height: 1.5">"#SomeoneTellMarineLePen African migrants aren't invading us, and here's the data to prove it."</blockquote>
+			</section>			
+
+			
+			<section data-background="images/US-net-2013.png" data-background-size="contain">
+				<br><br><br>
+				<div style="background-color:rgba(0, 0, 0, 0.2)">
+				<p style="text-align:center;"><b>US net-migration in 2013</b></p>
+				<br>
+				<p style="text-align:center">nikola.sander@oeaw.ac.at <br><a href="https://twitter.com/nikolasander" target="_blank"><font color="white">@nikolasander</font></a><br>
+				Slides: <a href="http://www.nikolasander.com/paa2015" target="_blank">nikolasander.com/paa2015</a></p>
+				</div>
+			</section>
+
+		
+			
+		<!-- END SLIDES -->		
+		</div>
+	</div>
+	
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+
+	<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: false,
+				history: false,
+				center: true,
+				slideNumber: true,
+				keyboard: true,
+				overview: true,
+				touch: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+	</script>
+	</div>
+</body>
+</html>
