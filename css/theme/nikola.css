@@ -49,16 +49,26 @@
 
 .reveal p {
  margin: 20px 0 20px 0;
- font-size: 130%;}
+ font-size: 140%;}
  
 .reveal h4 {
  font-size: 110%;}
 
 .reveal blockquote {
  line-height: 1.6em;
- font-size: 125%;
+ font-size: 140%;
+ width: 80%;
 }
 
+.reveal li{
+ line-height: 1.3em;
+ margin: 0px 0 30px 0;
+ font-size: 140%;
+}
+
+.reveal ul {
+	list-style-type: none;
+}
 
 
 /*********************************************
